@@ -1,0 +1,104 @@
+<View>
+    <Header value="Extracted Quote"/>
+    <Text name="text" value="$text"/>
+    <Header value="Full Paragraph"/>
+    <Text name="paragraph_text" value="$paragraph_text"/>
+    <View style="display:flex">
+      <View style="flex: 50%">
+   	 <Text name="step-1" value="1. Read the full paragraph. Navigate to the a task that where the highlighted entity is a relevant one and in the paragraph."/>
+   	 <Text name="step-2" value="2. Rate how well the quote was extracted, or if already completed for this quote, skip to step 4."/>
+   	 <Choices name="extraction-score" toName="paragraph_text"
+        		 choice="single" showInLine="true">
+ 		 <Choice value="Perfect"/>
+ 		 <Choice value="Good"/>
+ 		 <Choice value="Poor"/>
+ 		 <Choice value="Already labelled paragraph quotes"/>
+   	 </Choices>
+      </View>
+      <View style="flex: 50%">
+   	 <Text name="step-3" value="3. Highlight the parts of the Full Paragraph text above that are direct quotes"/>
+   	 <Labels name="quote" toName="paragraph_text">    
+ 		 <Label value="Quote" background="purple"/>
+   	 </Labels>
+   	 <Text name="step-3.5" value="4. If entity the sentence is about is never explicitly named, check this box"/>
+   	 <Choices name="null" toName="paragraph_text" choice="single">
+ 		 <Choice value="null"/>
+   	 </Choices>
+      </View>
+  	</View>
+    <Text name="step-4" value="5. Identify if the selected entity is relevant. Select its type. If not relevant, skip to task with relevant entity highlighted."/>
+    <Choices name="entity-type" toName="paragraph_text"
+    		 choice="single" showInLine="true">
+      <Choice value="Crops"/>
+      <Choice value="Organizations"/>
+      <Choice value="Agriculural Practices"/>
+      <Choice value="Technology"/>
+      <Choice value="Geographical Locations"/>
+      <Choice value="Environmental Conditions"/>
+      <Choice value="Legal Aspects and Politics"/>
+      <Choice value="Economic Factors"/>
+	<Choice value="Programs and Initiatives"/>
+	<Choice value="Natural Resources"/>
+      <Choice value="Other"/>
+    </Choices>
+    <Text name="step-5" value="6. Identify the aspect(s) of the entity to which the text is referring"/>
+    <Choices name="aspect" toName="paragraph_text"
+    		 choice="multiple" showInLine="true">
+      <Choice value="Resistance"/>
+      <Choice value="Consumer Perception"/>
+      <Choice value="Safety"/>
+      <Choice value="Food Security"/>
+      <Choice value="Productivity"/>
+      <Choice value="Economic Impact"/>
+      <Choice value="Research Development"/>
+      <Choice value="Environment and Ethical Concerns"/>
+      <Choice value="Miscellaneous"/>
+    </Choices>
+    <Text name="step-6" value="7. Identify the sentiment the text has toward the first selected aspect (reading left to right)"/>
+    <Choices name="sentiment" toName="paragraph_text"
+    		 choice="single" showInLine="true">
+      <Choice value="Positive"/>
+      <Choice value="Negative"/>
+      <Choice value="Neutral"/>
+      <Choice value="Conflict"/>
+    </Choices>
+	 <Text name="step-7" value="8. If there are two aspects, identify the sentiment the text has toward the second selected aspect (reading left to right)"/>
+    <Choices name="second-sentiment" toName="paragraph_text"
+    		 choice="single" showInLine="true">
+      <Choice value="Positive"/>
+      <Choice value="Negative"/>
+      <Choice value="Neutral"/>
+      <Choice value="Conflict"/>
+    </Choices>
+ 
+    <Text name="step-8" value="9. Select your confidence with the labels, save and continue to next task." />
+    <Choices name="confidence" toName="paragraph_text"
+    		 choice="single" showInLine="true">
+      <Choice value="Highly Confident"/>
+      <Choice value="Regular Confidence"/>
+      <Choice value="Unsure"/>
+    </Choices>
+ 
+    <View>
+      <Text name="step-10" value="10. If the proposed entity needs to be modified, use this"/>
+      <Labels name="proposed_entity" toName="paragraph_text">
+   	 <Label value="Proposed Entity" background="red"/>
+      </Labels>
+    </View>
+ 
+    <Text name="break" value=" "/>
+  <Header value="For reviewing only" />
+    <Choices name="review" toName="text"
+    		 choice="single" showInLine="true">
+      <Choice value="Reviewed - Complete"/>
+      <Choice value="Reviewed - Needs further discussion"/>
+    </Choices>
+    
+
+
+ 
+  </View>
+ 
+  <!-- {
+    "data": {"text": "This is a great 3D movie that delivers everything almost right in your face."}
+  } -->
