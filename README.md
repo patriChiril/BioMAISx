@@ -6,6 +6,8 @@ The dataset is made available as a csv here: https://drive.google.com/file/d/1Kz
 
 A Zenodo link will later be made available. 
 
+Examples of preparing and using this data to train ABSA models is located in tutorials. 
+
 ## Collecting Data
 
 The raw articles from which the quotes used in this corpus were sourced came from Factiva. You need to gain access to articles from Factiva (for a fee) and attain a user key and CID. Then to download the articles, set your key and CID to environment variables named `FACTIVA_USER_KEY` and `FACTIVA_CID`, respectively. Then you should be able to successfully run `python scripts/download-source.py`
