@@ -2,7 +2,7 @@
 
 This repository releases the BioMAISx (*Bio*technology: *M*edia, *A*griculture, *I*nvestment, (and) *S*entiment E*x*cerpts) dataset annotated for Aspect-Based Sentiment Analysis (ABSA). It includes all code required for collecting and processing the raw data used for annotation, details on how the data was annotated, and code for post-processing the annotated data. 
 
-The dataset is made available as a csv here: https://drive.google.com/file/d/1KzAsIW8CcSFOYHLjN15WRnUimPqXc_c3/view?usp=drive_link
+The dataset is made available as a csv [here](https://drive.google.com/file/d/1PmJr1DholnD-Bnr_Q4FlcRajRHZ5kNJs/view?usp=sharing)
 
 A Zenodo link will later be made available. 
 
