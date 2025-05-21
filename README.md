@@ -22,6 +22,8 @@ From this the quotes were reformatted for annotation with LabelStudio and propos
 
 Relevant information and code for annotation is included in annotation/README.md
 
+##
+
 If you find this repository helpful, feel free to cite our publication [BioMAISx: A Corpus for Aspect-Based Sentiment Analysis of Media Representations of Agricultural Biotechnologies in Africa:](https://dl.acm.org/doi/abs/10.1145/3627673.3679152)
 
 ```
