@@ -21,3 +21,26 @@ From this the quotes were reformatted for annotation with LabelStudio and propos
 ## Annotating
 
 Relevant information and code for annotation is included in annotation/README.md
+
+If you find this repository helpful, feel free to cite our publication [BioMAISx: A Corpus for Aspect-Based Sentiment Analysis of Media Representations of Agricultural Biotechnologies in Africa:](https://dl.acm.org/doi/abs/10.1145/3627673.3679152)
+
+```
+@inproceedings{chiril2024biomaisx,
+  title={BioMAISx: A Corpus for Aspect-Based Sentiment Analysis of Media Representations of Agricultural Biotechnologies in Africa},
+  author={Chiril, Patricia and Spreadbury, Trevor and Rock, Joeva Sean and Dowd-Uribe, Brian and Uminsky, David},
+  booktitle={Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
+  pages={5338--5342},
+  year={2024}
+}
+```
+and [Seeds of Discourse: A Multilingual Corpus of Direct Quotations from African Media on Agricultural Biotechnologies:](https://aclanthology.org/2025.findings-naacl.473.pdf)
+
+```
+@inproceedings{chiril2025seeds,
+  title={Seeds of Discourse: A Multilingual Corpus of Direct Quotations from African Media on Agricultural Biotechnologies},
+  author={Chiril, Patricia and Spreadbury, Trevor and Rock, Joeva Sean and Dowd-Uribe, Brian and Uminsky, David},
+  booktitle={Findings of the Association for Computational Linguistics: NAACL 2025},
+  pages={8494--8500},
+  year={2025}
+}
+```
